@@ -19,9 +19,9 @@ In today's dynamic development environment, testing is not just an afterthought 
 
 ## Credits
 
-- Xpert Learning Assistant Chat+
+- FSF-PT-Class code
+- Xpert Learning Assistant
 - Bootcamp TAs
-- Online resources and tutorials
 
 ## License
 

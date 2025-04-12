@@ -1,19 +1,30 @@
-import word from "../../fixtures/mockWord.json";
-import { Game } from "../types";
-
-export const maskLettersInWord = (word: string) => {
-  return word.replace(/[A-Za-z]/g, '_');
+interface Answer {
+  text: string;
+  isCorrect: boolean;
 }
 
-export const mockState: Game = {
-  id: '60d5f2d8bc2d7e2b1c2b6c5d',
-  maskedWord: maskLettersInWord(word.text),
-  guesses: [],
-  isCorrect: false,
-  isComplete: false,
-  isWinner: false,
-  solution: word.text,
-  guessesRemaining: 9
+interface Question {
+  question: string;
+  answers: Answer[];
 }
 
-
+export const mockQuestions: Question[] = [
+  {
+    question: "What is 2 + 2?",
+    answers: [
+      { text: "3", isCorrect: false },
+      { text: "4", isCorrect: true },
+      { text: "5", isCorrect: false },
+      { text: "22", isCorrect: false },
+    ],
+  },
+  {
+    question: "What is the capital of France?",
+    answers: [
+      { text: "Berlin", isCorrect: false },
+      { text: "Paris", isCorrect: true },
+      { text: "Rome", isCorrect: false },
+      { text: "Madrid", isCorrect: false },
+    ],
+  },
+];

@@ -15,7 +15,13 @@
 
 In today's dynamic development environment, testing is not just an afterthought but a critical part of the development process. The **Tech Quiz Test Suite** project builds upon a fully functioning Tech Quiz application—developed using the MERN stack (MongoDB, Express.js, React, and Node.js)—by integrating Cypress for comprehensive testing. This project adds both component and end-to-end tests to ensure the application performs reliably under various conditions. Users can take a tech quiz featuring ten random questions and view their final score, allowing aspiring developers to test their knowledge and improve their skills.
 
+Link to Video: https://app.screencastify.com/v3/watch/Ot9lebkPZUkcrKHJiwot
+
 ## Usage
+
+- Run "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
+- "test": "cypress run --component",
+- "test-gui": "npx cypress open --detached"
 
 ## Credits
 
@@ -58,7 +64,7 @@ Contributions are welcome! Follow these steps:
 
 ## Tests
 
-n/a
+Test through cypress e2e and component
 
 ## Questions
 
